@@ -4,6 +4,9 @@
 
 @layer components {
   .link_item {
-    @apply text-gray-700 mr-4 font-medium
+    @apply text-gray-700 mr-4 text-[17px]
+  }
+  .active_link {
+    @apply text-gray-100
   }
 }
