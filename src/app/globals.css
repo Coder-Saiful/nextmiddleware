@@ -9,4 +9,19 @@
   .active_link {
     @apply text-gray-100
   }
+  .toggle_dots {
+    @apply w-7 h-1 bg-slate-700 mb-[5px] rounded-md
+  }
+  .mobile_nav_item {
+    @apply text-gray-100 mb-2 inline-block text-[17px]
+  }
+  .mobile_nav_item.active_link {
+    @apply text-green-400
+  }
+  .close_dots {
+    @apply bg-slate-100 w-7 h-1 rounded-md 
+  }
+  .mobile_menu.active {
+    @apply scale-x-100
+  }
 }
