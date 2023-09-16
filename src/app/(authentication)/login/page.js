@@ -8,6 +8,7 @@ export default function Page() {
     setCookie("token", "token4343", {
     });
     router.push("/");
+    
   }
     return (
       <div className=" flex justify-center items-center h-screen flex-col">

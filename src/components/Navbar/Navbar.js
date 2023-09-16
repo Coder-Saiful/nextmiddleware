@@ -33,15 +33,16 @@ const Navbar = () => {
         <div className="toggle_dots"></div>
         <div className="toggle_dots mb-0"></div>
       </div>}
-      <div className="hidden sm:block desktop_menu">
+      {/* <div className="hidden sm:block desktop_menu">
         <ul className="flex">
           <li><Link href='/' className={`link_item ${pathname == '/' ? "active_link" : ""}`}>Home</Link></li>
           <li><Link href='/login' className={`link_item ${pathname == '/login' ? "active_link" : ""}`}>Login</Link></li>
           <li><Link href='/registration' className={`link_item ${pathname == '/registration' ? "active_link" : ""}`}>Registration</Link></li>
           <li><Link href='/dashboard' className={`link_item ${pathname == '/dashboard' ? "active_link" : ""}`}>Dashboard</Link></li>
+          <li><Link href='/about' className={`link_item ${pathname == '/about' ? "active_link" : ""}`}>About Us</Link></li>
           {getCookie("token") && <li><button className={`link_item mr-0`} onClick={handleLogout}>Logout</button></li>}
         </ul>
-      </div>
+      </div> */}
       <div className="fixed sm:hidden bg-slate-800 top-0 left-0 w-1/2 sm:w-[300px] px-3 py-2 h-[100%] mobile_menu scale-x-0 origin-left duration-300" ref={mobile_menu_ref}>
         <ul className="flex justify-between items-center mb-3">
           <li><h2 className="text-green-400 font-medium text-[25px]"><Link href='/' onClick={handleHideNav}>Middleware</Link></h2></li>
@@ -55,6 +56,7 @@ const Navbar = () => {
           <li><Link onClick={handleHideNav} href='/login' className={`mobile_nav_item ${pathname == '/login' ? "active_link" : ""}`}>Login</Link></li>
           <li><Link onClick={handleHideNav} href='/registration' className={`mobile_nav_item ${pathname == '/registration' ? "active_link" : ""}`}>Registration</Link></li>
           <li><Link onClick={handleHideNav} href='/dashboard' className={`mobile_nav_item ${pathname == '/dashboard' ? "active_link" : ""}`}>Dashboard</Link></li>
+          <li><Link onClick={handleHideNav} href='/about' className={`mobile_nav_item ${pathname == '/about' ? "active_link" : ""}`}>About Us</Link></li>
           {getCookie("token") && <li><button className={`mobile_nav_item mr-0`} onClick={handleLogout}>Logout</button></li>}
         </ul>
       </div>
